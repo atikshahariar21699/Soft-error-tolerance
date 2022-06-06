@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-s1"  [ C:\Users\destr\OneDrive\Desktop\Thesis\code\5 bit error simulation\full_thesis-pspicefiles\schematic1\s1.sim ] 
+
+** Creating circuit file "s1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_16.6/tools/capture/library/memristor.lib" 
+* From [PSPICE NETLIST] section of C:\Users\destr\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 160ms 0 
+.OPTIONS ADVCONV
+.OPTIONS DIGINITSTATE= 0
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
